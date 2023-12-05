@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: #fff;
+}
 iframe {
     width: 70%; /* Tornar o iframe responsivo */
     height: 400px;
