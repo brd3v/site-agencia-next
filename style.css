@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+iframe {
+    width: 70%; /* Tornar o iframe responsivo */
+    height: 300px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(imagem/15f93743-0751-4d57-aa79-5463594a87cc.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    padding: 0;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    min-height: 100vh;
+}
+
+h2 {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #465cc7;
+    color: #fff;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translatey(0);
+    }
+    50% {
+        transform: translatey(-30px);
+    }
+}
+
+.container .row img {
+    border-radius: 50%;
+    width: 30vw;
+    height: 20vw;
+    animation: float 2s ease-in-out infinite;
+}
+
+section .container {
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.x {
+    margin-top: 5rem;
+}
+
+.container .row {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content {
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 35px;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 5rem;
+}
+
+.container .content button {
+    width: 50%;
+    height: 50px;
+}
+
+footer {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b2b8ff5d;
+}
+
+/* Adicionando media query para ajustes responsivos */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 36px;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .container .row img {
+        width: 50vw;
+        height: 40vw;
+    }
+
+    section .container {
+        flex-direction: column;
+    }
+
+    .container .row,
+    .container .content {
+        padding: 2rem;
+    }
+
+    .container .content button {
+        width: 100%;
+    }
+}
